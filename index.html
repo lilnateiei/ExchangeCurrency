@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-linear-to-r from-indigo-950 to-slate-900">
+  <div class="p-8 bg-indigo-950 w-[500px] rounded-md outline outline-2 outline-slate-800 text-gray-300">
+    
+    <h1 class="font-bold text-2xl  text-gray-300 mb-6">Exchange currency value</h1>
+    
+    <div class="mb-4">
+      <label for="amount" class="block font-bold mb-1">Amount</label>
+      <input id="money" type="text" class="input w-80 text-gray-950" placeholder="Enter your Amount">
+    </div>
+
+    <div class="mb-4">
+      <label for="currency" class="block text-gray-300 font-bold mb-1">Select your currency:</label>
+      <select id="currency" name="currency" class="select select-accent select-sm w-20 text-gray-950">
+        <option value="THB">THB</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label for="exchange" class="block font-bold text-gray-300 mb-1">Select currency to exchange to:</label>
+      <select id="exchange" name="exchange" class="select select-accent select-sm w-20 text-gray-950">
+        <option value="THB">THB</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+
+    <div class="mb-4 font-bold">
+      Result for Exchange: <span id="result" class="ml-2"></span>
+    </div>
+
+    <button onclick="Exchange()" class="w-full bg-blue-900 w-85 h-10 text-center bg-indigo-900 text-gray-300 rounded-xl font-bold cursor-pointer hover:bg-slate-800 outline-2 outline-offset-2 outline-blue-800">
+      Exchange
+    </button>
+
+    <script src="index.js">
+
+    </script>
+  </div>
+</body>
+้</html>

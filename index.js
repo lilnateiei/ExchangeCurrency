@@ -1,6 +1,6 @@
 function Exchange()  {
 
-    let USD = 35
+    let USD = 32
     let EUR = 37.55
     let THB = 1
     

@@ -38,7 +38,7 @@ function Exchange()  {
         result = amountDOM * EUR
     // EUR to USD
     } else if(selectedCurrency == "EUR" && selectedExchange == "USD"){
-        result = amountDOM / USD
+        result = amountDOM * USD
     } else if(selectedCurrency == "EUR" && selectedExchange == "THB"){
     // EUR to THB
         result = amountDOM * EUR
